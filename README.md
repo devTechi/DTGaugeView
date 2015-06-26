@@ -26,7 +26,7 @@ If you're unfamiliar with CocoaPods you can check out this tutorial
 
         platform :ios, '8.0'
         use_frameworks! # update cocoapods if needed "[sudo] gem install cocoapods"
-        pod 'DTGaugeView' :git => 'https://github.com/devTechi/DTGaugeView.git'
+        pod 'DTGaugeView', '~> 0.1.0'
         
 5. Run `pod install`.
 6. Open your app's `.xcworkspace` file to launch Xcode and start using the control!
