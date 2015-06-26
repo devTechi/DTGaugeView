@@ -13,7 +13,7 @@ Pod::Spec.new do |s|
   #
 
   s.name         = "DTGaugeView"
-  s.version      = "0.1.0"
+  s.version      = "v0.1.0"
   s.summary      = "DTGaugeView shows an arc with a needle like a thermometer etc.."
 
   s.description  = <<-DESC
@@ -72,7 +72,7 @@ Pod::Spec.new do |s|
   #  Supports git, hg, bzr, svn and HTTP.
   #
 
-  s.source       = { :git => "https://github.com/devTechi/DTGaugeView.git", :tag => "#{s.version}" }
+  s.source       = { :git => "https://github.com/devTechi/DTGaugeView.git", :tag => s.version.to_s }
 
 
   # ――― Source Code ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
