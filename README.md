@@ -10,6 +10,7 @@ adjust the currentNeedleLevel to have your value displayed.
 
 <img src="./screenshot.png" alt="Screenshot" width="250"/>
 <img src="./screenshot2.png" alt="Screenshot2" width="250"/>
+<img src="./screenshot3.png" alt="Screenshot3" width="250"/>
 
 Setup
 -----
