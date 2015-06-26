@@ -1,6 +1,6 @@
 DTGaugeView
 ===========
-DTGaugeView started as a fork and is inspired by [Thomas Winklers](https://github.com/tomgong) 
+DTGaugeView started as a fork and is inspired by [Thomas Winklers](https://github.com/tomgong) - 
 [SFGaugeView](https://github.com/simpliflow/SFGaugeView). A custom UIView with a gauge 
 control (tachometer like control). Changes of the needle are animated.
 
@@ -8,8 +8,8 @@ Colors, sizes, visibility and opacity can be customized. You can use the IBs
 __Attributes Inspector__ (see screenshot below) to change all properties and just need to 
 adjust the currentNeedleLevel to have your value displayed.
 
-![Alt text](/screenshot.png "Screenshot")
-![Alt text](/screensho2.png "Screenshot2")
+<img src="./screenshot.png" alt="Screenshot" width="250"/>
+<img src="./screenshot2.png" alt="Screenshot2" width="250"/>
 
 Setup
 -----
@@ -40,22 +40,22 @@ class or create it programmatically (see Screenshot below for storyboard configu
 3. Set up parameters
 
 ```objective-c
-		DTGaugeView *gauge;
-		gauge = [[DTGaugeView alloc] initWithFrame:CGRectMake(20, 276, 170, 200)];
-		// use arcBackgroundColor or set an NSArray of UIColors to add a gradient
-		self.gauge.arcBackgroundColor = [UIColor redColor];
-		// if arcGradientColors are set the arcBackgroundColor can't be seen
-        self.gauge.arcGradientColors = [NSArray arrayWithObjects:
+	DTGaugeView *gauge;
+	gauge = [[DTGaugeView alloc] initWithFrame:CGRectMake(20, 276, 170, 200)];
+	// use arcBackgroundColor or set an NSArray of UIColors to add a gradient
+	gauge.arcBackgroundColor = [UIColor redColor];
+	// if arcGradientColors are set the arcBackgroundColor can't be seen
+        gauge.arcGradientColors = [NSArray arrayWithObjects:
                                         (id)[UIColor grayColor].CGColor,
                                         (id)[UIColor yellowColor].CGColor,
                                         (id)[UIColor blueColor].CGColor,
                                         (id)[UIColor blackColor].CGColor,
-        self.gauge.needleColor = [UIColor colorWithRed:27/255.0 green:103/255.0 blue:107/255.0 alpha:1];
-        self.gauge.minlevel = 0;
-        self.gauge.maxlevel = 100;
-        self.gauge.currentNeedleLevel = 60;
-        self.gauge.isGivenInDegrees = YES;
-        [self.view addSubview:self.gauge];
+        gauge.needleColor = [UIColor colorWithRed:27/255.0 green:103/255.0 blue:107/255.0 alpha:1];
+        gauge.minlevel = 0;
+        gauge.maxlevel = 100;
+        gauge.currentNeedleLevel = 60;
+        gauge.isGivenInDegrees = YES;
+        [self.view addSubview:gauge];
 ```
 
 These properties can all be set:
