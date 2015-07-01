@@ -63,48 +63,48 @@ class or create it programmatically (see Screenshot below for storyboard configu
 
 These properties can all be set:
 ```objective-c
-		// Min/Max labels
-        CGFloat             maxlevel;					// level for right side of arc and MaxLabels text
-		CGFloat             minlevel;					// level for left side of arc and MinLabels text
-		BOOL                hideMinMaxLabels;			// if set to YES the MinMaxLabels are hidden
-		CGFloat             minMaxTextSize;				// text size of both MinMaxLabels
-		UIColor             *minimumTextColor;			// text color of minimum label
-		UIColor             *maximumTextColor;			// text color of maximum label
-		BOOL                showMinMaxLabelsAsCircle;	// if set to YES both MinMaxLabels are drawn as circle
-		UIColor             *minBackgroundColor;		// background color of minimum label
-		UIColor             *maxBackgroundColor;		// background color of maximum label
-		CGFloat             minMaxLabelAlpha;			// opacity/alpha of both MinMaxLabels
+	// Min/Max labels
+	CGFloat             minlevel;				// level for left side of arc and MinLabels text
+	CGFloat             maxlevel;				// level for right side of arc and MaxLabels text
+	BOOL                hideMinMaxLabels;			// if set to YES the MinMaxLabels are hidden
+	CGFloat             minMaxTextSize;			// text size of both MinMaxLabels
+	UIColor             *minimumTextColor;			// text color of minimum label
+	UIColor             *maximumTextColor;			// text color of maximum label
+	BOOL                showMinMaxLabelsAsCircle;		// if set to YES both MinMaxLabels are drawn as circle
+	UIColor             *minBackgroundColor;		// background color of minimum label
+	UIColor             *maxBackgroundColor;		// background color of maximum label
+	CGFloat             minMaxLabelAlpha;			// opacity/alpha of both MinMaxLabels
 
-		// Needle label
-		CGFloat             needleTextSize;				// text size of needles value label
-		UIColor             *needleTextColor;			// text color of needles value label
+	// Needle label
+	CGFloat             needleTextSize;			// text size of needles value label
+	UIColor             *needleTextColor;			// text color of needles value label
 
-		// Needle
-		CGFloat             needleWidth;				// width of needles source/circle
-		UIColor             *needleColor;				// color of needle
-		UIColor             *needleStrokeColor;			// color of needle border
-		CGFloat             currentNeedleLevel;			// sets the current Level
-		CGFloat             needleOpacity;
+	// Needle
+	CGFloat             needleWidth;			// width of needles source/circle
+	UIColor             *needleColor;			// color of needle
+	UIColor             *needleStrokeColor;			// color of needle border
+	CGFloat             currentNeedleLevel;			// sets the current Level
+	CGFloat             needleOpacity;
 
-		// Unit label
-		NSString            *unit;						// string for unit label
-		BOOL                hideUnitLabel;				// if set to YES the unit label is hidden
-		UIColor             *unitTextColor;				// text color of unit label below needle
-		UIColor             *unitBackgroundColor;		// background color of unit label below needle
-		CGFloat             unitTextSize;				// text size of unit label below needle
-		BOOL                showUnitLabelAsCircle;		// if set to YES unit label is drawn as circle
+	// Unit label
+	NSString            *unit;				// string for unit label
+	BOOL                hideUnitLabel;			// if set to YES the unit label is hidden
+	UIColor             *unitTextColor;			// text color of unit label below needle
+	UIColor             *unitBackgroundColor;		// background color of unit label below needle
+	CGFloat             unitTextSize;			// text size of unit label below needle
+	BOOL                showUnitLabelAsCircle;		// if set to YES unit label is drawn as circle
 
-		// Arc
-		UIColor             *arcBackgroundColor;		// background color of arc on top
-		NSArray             *arcGradientColors;			// NSArray of UIColor for the gradient of the arc
-		CGFloat             arcWidth;					// width of arc
+	// Arc
+	UIColor             *arcBackgroundColor;		// background color of arc on top
+	NSArray             *arcGradientColors;			// NSArray of UIColor for the gradient of the arc
+	CGFloat             arcWidth;				// width of arc
 
-		// Border of needle view just for help
-		CGFloat             needleViewBorderWidth;		// border width of needle view to see where it is drawn
-		UIColor             *needleViewBorderColor;		// border color of needle view
+	// Border of needle view just for help
+	CGFloat             needleViewBorderWidth;		// border width of needle view to see where it is drawn
+	UIColor             *needleViewBorderColor;		// border color of needle view
 
-		// etc
-		BOOL                isGivenInDegrees;			// if set to YES "°" is added to text in needle
+	// etc
+	BOOL                isGivenInDegrees;			// if set to YES "°" is added to text in needle
 ```
 
 <img src="./IBsetup.png" alt="IBSetup" width="250"/>
