@@ -70,6 +70,7 @@ These properties can all be set:
 ```objective-c
 	// Min/Max labels
 <<<<<<< HEAD
+<<<<<<< HEAD
 	CGFloat             minlevel;					// level for left side of arc and MinLabels text
 	CGFloat             maxlevel;					// level for right side of arc and MaxLabels text
 	BOOL                hideMinMaxLabels;			// if set to YES the MinMaxLabels are hidden
@@ -80,17 +81,26 @@ These properties can all be set:
 =======
 	CGFloat             minlevel;				// level for left side of arc and MinLabels text
 	CGFloat             maxlevel;				// level for right side of arc and MaxLabels text
+=======
+	CGFloat             minlevel;					// level for left side of arc and MinLabels text
+	CGFloat             maxlevel;					// level for right side of arc and MaxLabels text
+>>>>>>> Update README.md
 	BOOL                hideMinMaxLabels;			// if set to YES the MinMaxLabels are hidden
-	CGFloat             minMaxTextSize;			// text size of both MinMaxLabels
+	CGFloat             minMaxTextSize;				// text size of both MinMaxLabels
 	UIColor             *minimumTextColor;			// text color of minimum label
 	UIColor             *maximumTextColor;			// text color of maximum label
+<<<<<<< HEAD
 	BOOL                showMinMaxLabelsAsCircle;		// if set to YES both MinMaxLabels are drawn as circle
+>>>>>>> Update README.md
+=======
+	BOOL                showMinMaxLabelsAsCircle;	// if set to YES both MinMaxLabels are drawn as circle
 >>>>>>> Update README.md
 	UIColor             *minBackgroundColor;		// background color of minimum label
 	UIColor             *maxBackgroundColor;		// background color of maximum label
 	CGFloat             minMaxLabelAlpha;			// opacity/alpha of both MinMaxLabels
 
 	// Needle label
+<<<<<<< HEAD
 <<<<<<< HEAD
 	CGFloat             needleTextSize;				// text size of needles value label
 	UIColor             *needleTextColor;			// text color of needles value label
@@ -106,11 +116,20 @@ These properties can all be set:
 	CGFloat             needleWidth;			// width of needles source/circle
 	UIColor             *needleColor;			// color of needle
 >>>>>>> Update README.md
+=======
+	CGFloat             needleTextSize;				// text size of needles value label
+	UIColor             *needleTextColor;			// text color of needles value label
+
+	// Needle
+	CGFloat             needleWidth;				// width of needles source/circle
+	UIColor             *needleColor;				// color of needle
+>>>>>>> Update README.md
 	UIColor             *needleStrokeColor;			// color of needle border
 	CGFloat             currentNeedleLevel;			// sets the current Level
 	CGFloat             needleOpacity;
 
 	// Unit label
+<<<<<<< HEAD
 <<<<<<< HEAD
 	NSString            *unit;						// string for unit label
 	BOOL                hideUnitLabel;				// if set to YES the unit label is hidden
@@ -124,15 +143,26 @@ These properties can all be set:
 	UIColor             *unitBackgroundColor;		// background color of unit label below needle
 	CGFloat             unitTextSize;			// text size of unit label below needle
 >>>>>>> Update README.md
+=======
+	NSString            *unit;						// string for unit label
+	BOOL                hideUnitLabel;				// if set to YES the unit label is hidden
+	UIColor             *unitTextColor;				// text color of unit label below needle
+	UIColor             *unitBackgroundColor;		// background color of unit label below needle
+	CGFloat             unitTextSize;				// text size of unit label below needle
+>>>>>>> Update README.md
 	BOOL                showUnitLabelAsCircle;		// if set to YES unit label is drawn as circle
 
 	// Arc
 	UIColor             *arcBackgroundColor;		// background color of arc on top
 	NSArray             *arcGradientColors;			// NSArray of UIColor for the gradient of the arc
 <<<<<<< HEAD
+<<<<<<< HEAD
 	CGFloat             arcWidth;					// width of arc
 =======
 	CGFloat             arcWidth;				// width of arc
+>>>>>>> Update README.md
+=======
+	CGFloat             arcWidth;					// width of arc
 >>>>>>> Update README.md
 
 	// Border of needle view just for help
