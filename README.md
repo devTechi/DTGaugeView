@@ -22,7 +22,7 @@ If you're unfamiliar with CocoaPods you can check out this tutorial
 
 1. In Terminal navigate to the root of your project.
 2. Run 'touch Podfile' to create the Podfile.
-3. Open the Podfile using 'open -e Podfile'
+3. Open the Podfile using 'open -a Xcode Podfile'
 4. Add the pod `DTGaugeView` to your [Podfile](https://github.com/CocoaPods/CocoaPods/wiki/A-Podfile).
 
         platform :ios, '8.0'
