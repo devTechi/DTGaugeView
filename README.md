@@ -38,25 +38,27 @@ Usage
 1. Either create DTGaugeView by dragging UIView from storyboard and change implementing 
 class or create it programmatically (see Screenshot below for storyboard configuration)
 2. Create an outlet (if create via storyboard)
-3. Set up parameters
+3. Set up parameters like below
+4. GaugeControl interaction __currentNeedleLevel__ --> sets the current level of the needle
 
 ```objective-c
 	DTGaugeView *gauge;
-	gauge = [[DTGaugeView alloc] initWithFrame:CGRectMake(20, 276, 170, 200)];
+	gauge = [[DTGaugeView alloc] initWithFrame:CGRectMake(20, 275, 170, 200)];
 	// use arcBackgroundColor or set an NSArray of UIColors to add a gradient
 	gauge.arcBackgroundColor = [UIColor redColor];
 	// if arcGradientColors are set the arcBackgroundColor can't be seen
-        gauge.arcGradientColors = [NSArray arrayWithObjects:
+	gauge.arcGradientColors = [NSArray arrayWithObjects:
                                         (id)[UIColor grayColor].CGColor,
                                         (id)[UIColor yellowColor].CGColor,
                                         (id)[UIColor blueColor].CGColor,
                                         (id)[UIColor blackColor].CGColor,
-        gauge.needleColor = [UIColor colorWithRed:27/255.0 green:103/255.0 blue:107/255.0 alpha:1];
-        gauge.minlevel = 0;
-        gauge.maxlevel = 100;
-        gauge.currentNeedleLevel = 60;
-        gauge.isGivenInDegrees = YES;
-        [self.view addSubview:gauge];
+                                        nil];
+	gauge.needleColor = [UIColor colorWithRed:27/255.0 green:103/255.0 blue:107/255.0 alpha:1];
+	gauge.minlevel = 0;
+	gauge.maxlevel = 100;
+	gauge.currentNeedleLevel = 60;
+	gauge.isGivenInDegrees = YES;
+	[self.view addSubview:gauge];
 ```
 
 These properties can all be set:
@@ -105,8 +107,7 @@ These properties can all be set:
 		BOOL                isGivenInDegrees;			// if set to YES "°" is added to text in needle
 ```
 
-4. GaugeControl interaction
-        gauge.currentNeedleLevel = sets the current level of the needle
+<img src="./IBsetup.png" alt="IBSetup" width="250"/>
         
 
 Licence
